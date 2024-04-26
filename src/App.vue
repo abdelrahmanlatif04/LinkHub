@@ -1,5 +1,7 @@
 <template>
-  <div :class="`w-full h-[100vh] transition-all duration-300 relative font-semibold ${mode}`">
+  <div
+    :class="`w-full h-[100vh] transition-all duration-300 relative font-semibold ${mode}`"
+  >
     <!-- <div
       :class="`cursor-pointer bg-orange-400 absolute left-2 top-2 w-16 h-8 rounded-2xl border-orange-400 p-2 flex ${mode} items-center`"
       @click="theme = !theme"
