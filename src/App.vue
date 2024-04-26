@@ -52,7 +52,7 @@ export default {
         },
         {
           img: twitterImg,
-          name: "X",
+          name: "X (Twitter)",
           link: "https://twitter.com/3bdellatiif",
         },
         {
