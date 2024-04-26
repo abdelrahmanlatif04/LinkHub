@@ -9,13 +9,21 @@
       <div class="w-6 rounded-full aspect-square bg-slate-800"></div>
     </div> -->
 
-    <div class="w-full h-full flex flex-col gap-5 items-center justify-center">
-      <img
-        src="./assets/avatar.png"
-        alt="My pic"
-        class="rounded-full border-8 border-white min-w-64 max-w-72 w-3/5"
-      />
-      <div class="links flex flex-col min-w-64 max-w-72 w-3/5 gap-3 my-5">
+    <div
+      class="min-w-64 max-w-72 w-3/5 h-full flex flex-col gap-5 items-center absolute left-1/2 -translate-x-1/2 justify-center"
+    >
+      <div
+        class="card relative w-full aspect-square cursor-pointer transition-all duration-500"
+        @click="rotateCard()"
+        :style="`transform: ${this.rotation};`"
+      >
+        <img
+          src="./assets/avatar.png"
+          class="front w-full absolute rounded-full border-8 border-white"
+        />
+        <img src="./assets/qr-code.svg" class="back absolute w-[90%] m-[5%]" />
+      </div>
+      <div class="links flex flex-col w-full gap-3 my-5">
         <Link
           v-for="link in links"
           :key="link"
@@ -41,6 +49,7 @@ export default {
     return {
       pic: avatar,
       theme: true,
+      rotation: "180deg",
       links: [
         {
           img: facebookImg,
@@ -70,7 +79,12 @@ export default {
       ],
     };
   },
-  methods: {},
+  methods: {
+    rotateCard() {
+      this.rotation =
+        this.rotation == "rotateY(180deg)" ? "none" : "rotateY(180deg)";
+    },
+  },
   components: { Link },
   computed: {
     mode() {
@@ -83,3 +97,18 @@ export default {
   },
 };
 </script>
+
+<style>
+.card {
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+</style>
