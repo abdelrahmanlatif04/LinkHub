@@ -1,13 +1,16 @@
 <template>
   <div
-    :class="`w-full h-[100vh] transition-all duration-300 relative font-semibold ${mode}`"
+    :class="`w-full h-[100vh] transition-all  duration-300 relative font-semibold ${mode}`"
   >
-    <!-- <div
-      :class="`cursor-pointer bg-orange-400 absolute left-2 top-2 w-16 h-8 rounded-2xl border-orange-400 p-2 flex ${mode} items-center`"
+    <div
+      :class="` cursor-pointer bg-indigo-300 absolute left-2 top-2 w-16 h-8 rounded-2xl border-orange-400 p-2 flex items-center`"
       @click="theme = !theme"
     >
-      <div class="w-6 rounded-full aspect-square bg-slate-800"></div>
-    </div> -->
+      <div
+        class="w-6 rounded-full toggle aspect-square absolute left-2 bg-[#fa0] transition-all duration-300"
+        :class="theme ? 'active' : ''"
+      ></div>
+    </div>
 
     <div
       class="min-w-64 max-w-72 w-3/5 h-full flex flex-col gap-5 items-center absolute left-1/2 -translate-x-1/2 justify-center"
@@ -89,9 +92,9 @@ export default {
   computed: {
     mode() {
       if (this.theme) {
-        return "bg-primary  justify-start";
+        return "bg-primary";
       } else {
-        return "bg-secondary justify-end";
+        return "bg-secondary";
       }
     },
   },
@@ -110,5 +113,9 @@ export default {
 
 .back {
   transform: rotateY(180deg);
+}
+.active {
+  transform: translateX(calc(-100% - 8px));
+  @apply bg-white left-full overflow-hidden after:absolute after:left-[17%] after:bottom-[17%] after:w-[85%] after:aspect-square after:rounded-full after:bg-indigo-300;
 }
 </style>
