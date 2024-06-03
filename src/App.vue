@@ -62,7 +62,7 @@ export default {
         {
           img: instagramImg,
           name: "Instagram",
-          link: "https://github.com/abdelrahmanlatif04",
+          link: "https://www.instagram.com/3bdellatiif04/",
         },
         {
           img: twitterImg,
