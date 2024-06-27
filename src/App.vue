@@ -48,32 +48,32 @@ export default {
       rotation: "180deg",
       links: [
         {
-          img: "src/assets/facebook.svg",
+          img: "./src/assets/facebook.svg",
           name: "Facebook",
           link: "https://www.facebook.com/profile.php?id=100003984241851&mibextid=ZbWKwL",
         },
         {
-          img: "src/assets/instagram.jpg",
+          img: "./src/assets/instagram.jpg",
           name: "Instagram",
           link: "https://www.instagram.com/3bdellatiif04",
         },
         {
-          img: "src/assets/twitter.png",
+          img: "./src/assets/twitter.png",
           name: "X (Twitter)",
           link: "https://twitter.com/3bdellatiif",
         },
         {
-          img: "src/assets/linkedin.png",
+          img: "./src/assets/linkedin.png",
           name: "LinkedIn",
           link: "https://www.linkedin.com/in/abdelrahmanlatif/",
         },
         {
-          img: "src/assets/github.jpg",
+          img: "./src/assets/github.jpg",
           name: "Github",
           link: "https://github.com/abdelrahmanlatif04",
         },
         {
-          img: "src/assets/behance.png",
+          img: "./src/assets/behance.png",
           name: "Behance",
           link: "http://www.behance.net/3bdellatiif",
         },
