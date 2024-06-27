@@ -41,6 +41,12 @@
 
 <script>
 import Link from "./components/Link.vue";
+import fbImg from "./assets/facebook.svg";
+import instagramImg from "./assets/instagram.jpg";
+import XImg from "./assets/twitter.png";
+import linkedInImg from "./assets/linkedin.png";
+import githubImg from "./assets/github.jpg";
+import behanceImg from "./assets/behance.png";
 export default {
   data() {
     return {
@@ -48,32 +54,32 @@ export default {
       rotation: "180deg",
       links: [
         {
-          img: "../src/assets/facebook.svg",
+          img: fbImg,
           name: "Facebook",
           link: "https://www.facebook.com/profile.php?id=100003984241851&mibextid=ZbWKwL",
         },
         {
-          img: "../src/assets/instagram.jpg",
+          img: instagramImg,
           name: "Instagram",
           link: "https://www.instagram.com/3bdellatiif04",
         },
         {
-          img: "../src/assets/twitter.png",
+          img: XImg,
           name: "X (Twitter)",
           link: "https://twitter.com/3bdellatiif",
         },
         {
-          img: "../src/assets/linkedin.png",
+          img: linkedInImg,
           name: "LinkedIn",
           link: "https://www.linkedin.com/in/abdelrahmanlatif/",
         },
         {
-          img: "../src/assets/github.jpg",
+          img: githubImg,
           name: "Github",
           link: "https://github.com/abdelrahmanlatif04",
         },
         {
-          img: "../src/assets/behance.png",
+          img: behanceImg,
           name: "Behance",
           link: "http://www.behance.net/3bdellatiif",
         },
