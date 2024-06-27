@@ -21,7 +21,7 @@
         :style="`transform: ${this.rotation};`"
       >
         <img
-          src="./assets/avatar.png"
+          src="./assets/avatar.jpg"
           class="front w-full absolute rounded-full border-8 border-white"
         />
         <img src="./assets/qr-code.svg" class="back absolute w-[90%] m-[5%]" />
@@ -40,44 +40,42 @@
 </template>
 
 <script>
-import avatar from "./assets/avatar.png";
 import Link from "./components/Link.vue";
-import linkedinImg from "./assets/linkedin.png";
-import facebookImg from "./assets/facebook.svg";
-import twitterImg from "./assets/twitter.png";
-import githubImg from "./assets/github.jpg";
-import instagramImg from "./assets/instagram.jpg";
 export default {
   data() {
     return {
-      pic: avatar,
       theme: true,
       rotation: "180deg",
       links: [
         {
-          img: facebookImg,
+          img: "src/assets/facebook.svg",
           name: "Facebook",
-          link: "https://github.com/abdelrahmanlatif04",
+          link: "https://www.facebook.com/profile.php?id=100003984241851&mibextid=ZbWKwL",
         },
         {
-          img: instagramImg,
+          img: "src/assets/instagram.jpg",
           name: "Instagram",
-          link: "https://github.com/abdelrahmanlatif04",
+          link: "https://www.instagram.com/3bdellatiif04",
         },
         {
-          img: twitterImg,
+          img: "src/assets/twitter.png",
           name: "X (Twitter)",
           link: "https://twitter.com/3bdellatiif",
         },
         {
-          img: linkedinImg,
+          img: "src/assets/linkedin.png",
           name: "LinkedIn",
           link: "https://www.linkedin.com/in/abdelrahmanlatif/",
         },
         {
-          img: githubImg,
+          img: "src/assets/github.jpg",
           name: "Github",
           link: "https://github.com/abdelrahmanlatif04",
+        },
+        {
+          img: "src/assets/behance.png",
+          name: "Behance",
+          link: "http://www.behance.net/3bdellatiif",
         },
       ],
     };
