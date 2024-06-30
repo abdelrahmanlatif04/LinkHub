@@ -1,9 +1,9 @@
 <template>
   <div
-    :class="`w-full min-h-[100vh] items-center  duration-300 relative font-semibold ${mode}`"
+    :class="`w-full min-h-[100vh] items-center duration-300 relative font-semibold ${mode}`"
   >
     <div
-      :class="`cursor-pointer bg-indigo-300 absolute left-2 top-2 w-16 h-8 rounded-2xl border-orange-400 p-2 flex items-center`"
+      :class="`cursor-pointer bg-indigo-300 relative left-2 top-2 w-16 h-8 rounded-2xl border-orange-400 p-2 flex items-center`"
       @click="theme = !theme"
     >
       <div
@@ -13,7 +13,7 @@
     </div>
 
     <div
-      class="min-w-64 max-w-72 mx-auto py-5 w-3/5 h-full flex flex-col justify-around gap-5 items-center"
+      class="min-w-64 max-w-72 mx-auto py-10 w-3/5 h-full flex flex-col justify-around items-center"
     >
       <div
         class="card relative w-full aspect-square cursor-pointer transition-all duration-500"
@@ -87,7 +87,7 @@ export default {
         {
           img: whatsappImg,
           name: "Whatsapp",
-          link: "http://www.behance.net/3bdellatiif",
+          link: "https://wa.me/+201070039593 ",
         },
       ],
     };
