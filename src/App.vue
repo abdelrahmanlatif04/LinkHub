@@ -46,7 +46,6 @@ import instagramImg from "./assets/instagram.jpg";
 import XImg from "./assets/twitter.png";
 import linkedInImg from "./assets/linkedin.png";
 import githubImg from "./assets/github.jpg";
-import behanceImg from "./assets/behance.png";
 import whatsappImg from "./assets/whatsapp.svg";
 export default {
   data() {
@@ -78,11 +77,6 @@ export default {
           img: githubImg,
           name: "Github",
           link: "https://github.com/abdelrahmanlatif04",
-        },
-        {
-          img: behanceImg,
-          name: "Behance",
-          link: "http://www.behance.net/3bdellatiif",
         },
         {
           img: whatsappImg,
