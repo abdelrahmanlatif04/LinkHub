@@ -13,7 +13,7 @@
     </div>
 
     <div
-      class="min-w-64 max-w-72 mx-auto py-10 w-3/5 h-full flex flex-col justify-around items-center"
+      class="min-w-64 max-w-72 mx-auto w-3/5 h-full flex flex-col justify-around items-center"
     >
       <div
         class="card relative w-full aspect-square cursor-pointer transition-all duration-500"
