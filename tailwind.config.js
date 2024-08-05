@@ -4,7 +4,40 @@ export default {
   theme: {
     extend: {
       colors: { primary: "rgb(10, 12, 16)", secondary: "rgb(99 ,102 ,241)" },
+      transform: {
+        "preserve-3d": "preserve-3d",
+      },
+      backfaceVisibility: {
+        hidden: "hidden",
+      },
+      rotateY: {
+        180: "180deg",
+      },
+      translate: {
+        "-full-8": "calc(-100% - 8px)",
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.smooth': {
+          'transition-property': 'all',
+          'transition-duration': '400ms',
+        },
+        ".transform-style-preserve-3d": {
+          "transform-style": "preserve-3d",
+        },
+        ".backface-hidden": {
+          "backface-visibility": "hidden",
+        },
+        ".rotate-y-180": {
+          transform: "rotateY(180deg)",
+        },
+        ".translate-x-full-8": {
+          transform: "translateX(calc(-100% - 8px))",
+        },
+      });
+    },
+  ],
 };
