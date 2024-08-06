@@ -46,37 +46,37 @@ export default {
       links: [
         {
           title: "Facebook",
-          img: "../src/assets/facebook.svg",
+          img: "src/components/linksImgs/facebook.svg",
           dist: "https://www.facebook.com/profile.php?id=100003984241851&mibextid=ZbWKwL",
         },
         {
           title: "Instagram",
-          img: "../../src/assets/instagram.jpg",
+          img: "src/components/linksImgs/instagram.jpg",
           dist: "https://www.instagram.com/3bdellatiif04",
         },
         {
           title: "X (Twitter)",
-          img: "assets/twitter.png",
+          img: "src/components/linksImgs/twitter.png",
           dist: "https://twitter.com/3bdellatiif",
         },
         {
           title: "LinkedIn",
-          img: "src/assets/linkedin.png",
+          img: "src/components/linksImgs/linkedin.png",
           dist: "https://www.linkedin.com/in/abdelrahmanlatif/",
         },
         {
           title: "Github",
-          img: "./assets/github.jpg",
+          img: "src/components/linksImgs/github.jpg",
           dist: "https://github.com/abdelrahmanlatif04",
         },
         {
           title: "Whatsapp",
-          img: "./whatsapp.svg",
+          img: "src/components/linksImgs/whatsapp.svg",
           dist: "https://wa.me/+201070039593",
         },
         {
           title: "Behance",
-          img: "../behance.png",
+          img: "src/components/linksImgs/behance.png",
           dist: "behance.net/3bdellatiif",
         },
       ],
