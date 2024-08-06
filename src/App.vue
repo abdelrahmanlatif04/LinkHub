@@ -84,7 +84,7 @@ export default {
         {
           title: "Behance",
           img: behanceImg,
-          dist: "behance.net/3bdellatiif",
+          dist: "www.behance.net/3bdellatiif",
         },
       ],
     };
