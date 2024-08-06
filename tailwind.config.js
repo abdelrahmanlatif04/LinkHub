@@ -3,7 +3,7 @@ export default {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      colors: { primary: "rgb(10, 12, 16)", secondary: "rgb(99 ,102 ,241)" },
+      colors: { dark: "rgb(10, 12, 16)", light: "rgb(99 ,102 ,241)" },
       transform: {
         "preserve-3d": "preserve-3d",
       },
@@ -21,9 +21,9 @@ export default {
   plugins: [
     function ({ addUtilities }) {
       addUtilities({
-        '.smooth': {
-          'transition-property': 'all',
-          'transition-duration': '400ms',
+        ".smooth": {
+          "transition-property": "all",
+          "transition-duration": "400ms",
         },
         ".transform-style-preserve-3d": {
           "transform-style": "preserve-3d",

@@ -4,11 +4,11 @@
   >
     <div
       :class="`cursor-pointer bg-indigo-300 md:relative absolute  left-2 top-2 w-16 h-8 rounded-2xl border-orange-400 p-2 flex items-center`"
-      @click="theme = !theme"
+      @click="changeMood()"
     >
       <div
         :class="`w-6 rounded-full toggle aspect-square absolute left-2 bg-[#fa0] smooth ${
-          theme ? 'active' : ''
+          mode == 'bg-dark' ? 'active' : ''
         }`"
       ></div>
     </div>
@@ -30,7 +30,7 @@
         />
       </div>
       <div class="links flex flex-col w-full gap-3 my-5">
-        <Link v-for="link in links" :key="link" :link="link" :mood="theme" />
+        <Link v-for="link in links" :key="link" :link="link" />
       </div>
     </div>
   </div>
@@ -38,75 +38,67 @@
 
 <script>
 import Link from "./components/Link.vue";
+import fbImg from "./assets/facebook.svg";
+import instagramImg from "./assets/instagram.jpg";
+import twitterImg from "./assets/twitter.png";
+import liImg from "./assets/linkedin.png";
+import ghImg from "./assets/github.jpg";
+import waImg from "./assets/whatsapp.svg";
+import behanceImg from "./assets/behance.png";
 export default {
   data() {
     return {
-      theme: true,
+      mode: "bg-light",
       rotation: null,
       links: [
         {
           title: "Facebook",
-          img: "./src/components/linksImgs/facebook.svg",
+          img: fbImg,
           dist: "https://www.facebook.com/profile.php?id=100003984241851&mibextid=ZbWKwL",
         },
         {
           title: "Instagram",
-          img: "src/components/linksImgs/instagram.jpg",
+          img: instagramImg,
           dist: "https://www.instagram.com/3bdellatiif04",
         },
         {
           title: "X (Twitter)",
-          img: "src/components/linksImgs/twitter.png",
+          img: twitterImg,
           dist: "https://twitter.com/3bdellatiif",
         },
         {
           title: "LinkedIn",
-          img: "src/components/linksImgs/linkedin.png",
+          img: liImg,
           dist: "https://www.linkedin.com/in/abdelrahmanlatif/",
         },
         {
           title: "Github",
-          img: "src/components/linksImgs/github.jpg",
+          img: ghImg,
           dist: "https://github.com/abdelrahmanlatif04",
         },
         {
           title: "Whatsapp",
-          img: "src/components/linksImgs/whatsapp.svg",
+          img: waImg,
           dist: "https://wa.me/+201070039593",
         },
         {
           title: "Behance",
-          img: "src/components/linksImgs/behance.png",
+          img: behanceImg,
           dist: "behance.net/3bdellatiif",
         },
       ],
     };
   },
-  // created() {
-  //   fetch("../links.json")
-  //     .then((response) => {
-  //       return response.json();
-  //     })
-  //     .then((res) => {
-  //       this.links = res;
-  //     });
-  // },
   methods: {
     rotateCard() {
       this.rotation =
         this.rotation == "rotateY(180deg)" ? "none" : "rotateY(180deg)";
     },
-  },
-  components: { Link },
-  computed: {
-    mode() {
-      if (this.theme) {
-        return "bg-primary";
-      } else {
-        return "bg-secondary";
-      }
+    changeMood() {
+      this.mode = this.mode == "bg-light" ? "bg-dark" : "bg-light";
     },
   },
+  components: { Link },
 };
 </script>
 
