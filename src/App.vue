@@ -59,7 +59,7 @@ export default {
         {
           title: "Instagram",
           img: instagramImg,
-          dist: "https://www.instagram.com/3bdellatiif04",
+          dist: "https://www.instagram.com/3bdellatiif4",
         },
         {
           title: "X (Twitter)",
@@ -84,7 +84,7 @@ export default {
         {
           title: "Behance",
           img: behanceImg,
-          dist: "www.behance.net/3bdellatiif",
+          dist: "https://www.behance.net/3bdellatiif",
         },
       ],
     };
