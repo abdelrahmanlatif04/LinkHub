@@ -48,7 +48,7 @@ import behanceImg from "./assets/behance.png";
 export default {
   data() {
     return {
-      mode: "bg-light",
+      mode: "bg-dark",
       rotation: null,
       links: [
         {
