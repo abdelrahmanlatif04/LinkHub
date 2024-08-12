@@ -26,7 +26,7 @@
         />
         <img
           src="./assets/qr-code.svg"
-          class="back rotate-180 absolute w-[90%] backface-hidden rotate-y-180 m-[5%]"
+          class="back rotate-180 absolute rounded-3xl backface-hidden rotate-y-180"
         />
       </div>
       <div class="links flex flex-col w-full gap-3 my-5">
