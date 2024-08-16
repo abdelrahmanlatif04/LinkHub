@@ -21,7 +21,7 @@
         :style="`transform: ${this.rotation};`"
       >
         <img
-          src="./assets/avatar.jpeg"
+          src="/avatar.jpeg"
           class="front w-full absolute rounded-full border-8 border-white backface-hidden"
         />
         <img
@@ -38,55 +38,57 @@
 
 <script>
 import Link from "./components/Link.vue";
-import fbImg from "./assets/facebook.svg";
-import instagramImg from "./assets/instagram.jpg";
-import twitterImg from "./assets/twitter.png";
-import liImg from "./assets/linkedin.png";
-import ghImg from "./assets/github.jpg";
-import waImg from "./assets/whatsapp.svg";
-import behanceImg from "./assets/behance.png";
+// import fbImg from "./assets/facebook.svg";
+// import instagramImg from "./assets/instagram.jpg";
+// import twitterImg from "./assets/twitter.png";
+// import liImg from "./assets/linkedin.png";
+// import ghImg from "./assets/github.jpg";
+// import waImg from "./assets/whatsapp.svg";
+// import behanceImg from "./assets/behance.png";
 export default {
   data() {
     return {
       mode: "bg-dark",
       rotation: null,
-      links: [
-        {
-          title: "Facebook",
-          img: fbImg,
-          dist: "https://www.facebook.com/profile.php?id=100003984241851&mibextid=ZbWKwL",
-        },
-        {
-          title: "Instagram",
-          img: instagramImg,
-          dist: "https://www.instagram.com/3bdellatiif4",
-        },
-        {
-          title: "X (Twitter)",
-          img: twitterImg,
-          dist: "https://twitter.com/3bdellatiif",
-        },
-        {
-          title: "LinkedIn",
-          img: liImg,
-          dist: "https://www.linkedin.com/in/abdelrahmanlatif/",
-        },
-        {
-          title: "Github",
-          img: ghImg,
-          dist: "https://github.com/abdelrahmanlatif04",
-        },
-        {
-          title: "Whatsapp",
-          img: waImg,
-          dist: "https://wa.me/+201070039593",
-        },
-        {
-          title: "Behance",
-          img: behanceImg,
-          dist: "https://www.behance.net/3bdellatiif",
-        },
-      ],
+      // // links: [
+      //   {
+      //     title: "Facebook",
+      //     img: fbImg,
+      //     dist: "https://www.facebook.com/profile.php?id=100003984241851&mibextid=ZbWKwL",
+      //   },
+      //   {
+      //     title: "Instagram",
+      //     img: instagramImg,
+      //     dist: "https://www.instagram.com/3bdellatiif4",
+      //   },
+      //   {
+      //     title: "X (Twitter)",
+      //     img: twitterImg,
+      //     dist: "https://twitter.com/3bdellatiif",
+      //   },
+      //   {
+      //     title: "LinkedIn",
+      //     img: liImg,
+      //     dist: "https://www.linkedin.com/in/abdelrahmanlatif/",
+      //   },
+      //   {
+      //     title: "Github",
+      //     img: ghImg,
+      //     dist: "https://github.com/abdelrahmanlatif04",
+      //   },
+      //   {
+      //     title: "Whatsapp",
+      //     img: waImg,
+      //     dist: "https://wa.me/+201070039593",
+      //   },
+      //   {
+      //     title: "Behance",
+      //     img: behanceImg,
+      //     dist: "https://www.behance.net/3bdellatiif",
+      //   },
+      // // ],
+
+      links: [],
     };
   },
   methods: {
@@ -97,6 +99,11 @@ export default {
     changeMood() {
       this.mode = this.mode == "bg-light" ? "bg-dark" : "bg-light";
     },
+  },
+  beforeCreate() {
+    fetch("links.json")
+      .then((res) => res.json())
+      .then((data) => (this.links = data));
   },
   components: { Link },
 };
