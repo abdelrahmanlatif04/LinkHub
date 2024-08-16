@@ -56,7 +56,7 @@ export default {
     },
   },
   beforeCreate() {
-    fetch("links.json")
+    fetch("/links.json")
       .then((res) => res.json())
       .then((data) => (this.links = data));
   },
