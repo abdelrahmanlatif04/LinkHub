@@ -3,7 +3,7 @@ export default {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      colors: { dark: "rgb(10, 12, 16)", light: "rgb(99 ,102 ,241)" },
+      colors: { dark: "rgb(10, 12, 16)", light: "rgb(87, 202, 255)" },
       transform: {
         "preserve-3d": "preserve-3d",
       },
