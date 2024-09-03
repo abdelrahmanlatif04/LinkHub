@@ -19,6 +19,6 @@ export default {
 
 <style scoped>
 a::before {
-  background-size: 60%;
+  background-size: 50%;
 }
 </style>
