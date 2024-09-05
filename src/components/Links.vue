@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col w-fullfont-semibold">
+  <div class="flex flex-col w-full font-semibold">
     <Link v-for="link in links" :key="link" :link="link" />
   </div>
 </template>

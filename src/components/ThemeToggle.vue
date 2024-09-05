@@ -1,6 +1,6 @@
 <template>
   <div
-    class="cursor-pointer bg-cyan-800 md:relative absolute left-2 top-2 w-16 h-8 rounded-2xl p-2 flex items-center shadow-lg"
+    class="cursor-pointer bg-cyan-800 absolute left-2 top-2 w-16 h-8 rounded-2xl p-2 flex items-center shadow-lg"
     @click="changeMood()"
   >
     <div
