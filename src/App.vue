@@ -2,7 +2,7 @@
   <div :class="`${mode} smooth `">
     <theme-toggle :mode="mode" @changeMood="changeMood" />
     <div
-      class="min-w-64 max-w-72 mx-auto w-3/5 h-[100vh] justify-between py-4 flex flex-col"
+      class="min-w-64 max-w-72 mx-auto w-3/5 h-[100vh] justify-center gap-5 py-4 flex flex-col"
     >
       <avatar />
       <links />
