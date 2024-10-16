@@ -5,7 +5,7 @@
     :style="`transform: ${this.rotation};`"
   >
     <img
-      src="/avatar.jpeg"
+      src="/avatar.jpg"
       class="front w-full absolute rounded-full border-8 border-white backface-hidden"
     />
     <img
