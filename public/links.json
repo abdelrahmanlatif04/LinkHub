@@ -25,13 +25,13 @@
     "dist": "https://wa.me/+201070039593"
   },
   {
-    "title": "Behance",
-    "img": "/behance.png",
-    "dist": "https://www.behance.net/3bdellatiif"
-  },
-  {
     "title": "Mail",
     "img": "/mail.png",
     "dist": "mailto:abdelrahmanlatif04@gmail.com"
+  },
+  {
+    "title": "Website (soon!)",
+    "img": "/website.png",
+    "dist": "https://3bdellatif-portfolio.vercel.app/"
   }
 ]
