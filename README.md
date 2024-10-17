@@ -25,6 +25,6 @@ LinkHub is a simple, elegant web page designed to host and display all my social
 
 ## How to Use
 
-1. Visit the [LinkHub page](https://github.com/abdelrahmanlatif04/LinkHub).
+1. Visit the [LinkHub page](https://3bdellatiif-linkhub.vercel.app/).
 2. View my social media links by clicking on the respective icons.
 3. To scan my QR code, click on the card featuring my avatar.
