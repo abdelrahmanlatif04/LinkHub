@@ -28,10 +28,5 @@
     "title": "Mail",
     "img": "/mail.png",
     "dist": "mailto:abdelrahmanlatif04@gmail.com"
-  },
-  {
-    "title": "Portfolio (soon!)",
-    "img": "/website.png",
-    "dist": "https://3bdellatiif-linkhub.vercel.app/"
   }
 ]
